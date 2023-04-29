@@ -1,6 +1,11 @@
 function positiveSum(arr) {
-    return arr.reduce((acc, curr) => {
-      if (curr > 0) acc += curr;
-      return acc;
-    }, 0);
+    let sum = 0
+    arr.forEach(x => {
+        if (x > 0) {
+            sum += x 
+        }
+    })
+    return sum
   }
+
+console.log(positiveSum([3, 2, -2, 4]))
