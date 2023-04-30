@@ -3,9 +3,12 @@ function points(games) {
     let myTeamSumPoints = 0;
 
     for (i = 0; i < games.length; i++) {
-        if (Number(games[i].split(":")[0]) > Number(games[i].split(":")[1])) {
+        let scoreMyTeam = Number(games[i].split(":")[0])
+        let scoreOpponent = Number(games[i].split(":")[1])
+        
+        if (scoreMyTeam > scoreOpponent) {
             myTeamSumPoints += 3
-        } else if (Number(games[i].split(":")[0]) === Number(games[i].split(":")[1])) {
+        } else if (scoreMyTeam === scoreOpponent) {
             myTeamSumPoints += 1
         }
 
