@@ -1,6 +1,8 @@
 function outed(meet, boss){
     let sum = 0
     let totalPeople = 0
+    let avg = 0
+
     
     for (const property in meet) {
       totalPeople += 1
@@ -11,12 +13,9 @@ function outed(meet, boss){
       }
     }
     
-    let avg = sum / totalPeople
+    avg = sum / totalPeople
     
-    if (avg <= 5) {
-      return "Get Out Now!"
-    } else {
-      return "Nice Work Champ!"
-    }
+    return avg <= 5 ? "Get Out Now!" : "Nice Work Champ!"
+
   
   }
