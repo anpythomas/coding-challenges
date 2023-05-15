@@ -1,6 +1,3 @@
-var isSquare = function(n){
-    let nSqrRoot = Math.sqrt(n)
-    
-    return (nSqrRoot === Math.round(nSqrRoot)) ? true : false
-  
+var isSquare = function(n){    
+    return (Math.sqrt(n) === Math.round(Math.sqrt(n))) ? true : false
   }
