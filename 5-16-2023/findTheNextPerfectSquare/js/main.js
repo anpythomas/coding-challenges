@@ -1,8 +1,3 @@
 function findNextSquare(sq) {
-    if (Math.sqrt(sq) !== Math.round(Math.sqrt(sq))) {
-      return -1;
-    } else {
-        let sqRoot = Math.sqrt(sq)
-        return (sqRoot + 1)**2
-    }
-  }
+    return (Math.sqrt(sq) !== Math.round(Math.sqrt(sq))) ? -1 : (Math.sqrt(sq) + 1)**2
+}
