@@ -7,3 +7,4 @@ function alternate(n, firstValue, secondValue){
     
     return finalArray
   }
+  
