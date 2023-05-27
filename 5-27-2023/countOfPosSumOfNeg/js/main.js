@@ -4,11 +4,7 @@ function countPositivesSumNegatives(input) {
     let sumNeg = 0
     
     for (i = 0; i < input.length; i++) {
-      if (input[i] > 0) {
-        newArray[0] += 1
-      } else if (input[i] < 0) {
-        newArray[1] += input[i]
-      }
+      input[i] > 0 ? newArray[0] += 1 : newArray[1] += input[i]
     }
     
     return newArray 
