@@ -12,5 +12,4 @@ const sumSquareEvenRootOdd = ns => {
     }
     
     return Number(newArray[newArray.length - 1].toFixed(2))
-    
   };
