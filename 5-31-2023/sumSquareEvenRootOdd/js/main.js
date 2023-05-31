@@ -1,9 +1,6 @@
-const sumSquareEvenRootOdd = ns => { 
-    let sum = 0
+const sumSquareEvenRootOdd = ns => {     
+    let total = ns.reduce((sum, elem) => 
+      elem % 2 === 0 ? sum += elem ** 2 : sum += Math.sqrt(elem), 0)
     
-    ns.forEach(elem => 
-      elem % 2 === 0 ? sum += elem ** 2 : sum += Math.sqrt(elem)
-    )
-    
-    return Number(sum.toFixed(2))
+    return Number(total.toFixed(2))
   };
