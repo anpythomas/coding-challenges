@@ -1,10 +1,15 @@
 function noIfsNoButs(a, b) {
+    let finalString
+    
     switch(true) {
       case (a < b):
-        return `${a} is smaller than ${b}`
+        finalString = `${a} is smaller than ${b}`
+        break;
       case (a > b):
-        return `${a} is greater than ${b}`
+        finalString = `${a} is greater than ${b}`
+        break;
       default:
-        return `${a} is equal to ${b}`
+        finalString =`${a} is equal to ${b}`
     }
+    return finalString
   }
