@@ -8,19 +8,13 @@ function sortArray(array) {
     let oddsArray = []
     
     // Loop through original array, if odd, add to odds array
-    for (i = 0; i < array.length; i++) {
-      array[i] % 2 !== 0 ? oddsArray.push(array[i]) : 'pass'
-    }
+    array.map(elem => elem % 2 !== 0 ? oddsArray.push(elem) : 'pass')
     
     // Sort odds array
     oddsArray.sort(compareNumbers)
       
     // Loop through original array, if number odd, replace with 0 index from odds array
-    for (i = 0; i < array.length; i++) {
-      if (array[i] % 2 !== 0) {
-        array[i] = oddsArray.shift()
-      }
-    }
+    let newArray = array.map((elem => elem % 2 !== 0 ? elem = oddsArray.shift() : elem))
     
-    return array
+    return newArray
   }
