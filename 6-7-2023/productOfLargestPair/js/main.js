@@ -8,9 +8,7 @@ function maxProduct(a) {
         // if current number is higher than either variable, compare two current vars and add current array element to
         //  the lower variable
       
-        if (a[i] > varA || a[i] > varB) {
-          (varA > varB) ? varB = a[i] : varA = a[i]
-        }
+        (a[i] > varA || a[i] > varB) ? (varA > varB) ? varB = a[i] : varA = a[i] : 'pass'
       
     }
   
