@@ -9,11 +9,7 @@ function maxProduct(a) {
         //  the lower variable
       
         if (a[i] > varA || a[i] > varB) {
-          if (varA > varB) {
-            varB = a[i]
-          } else {
-            varA = a[i]
-          }
+          (varA > varB) ? varB = a[i] : varA = a[i]
         }
       
     }
