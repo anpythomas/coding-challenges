@@ -11,6 +11,5 @@ function arrayPlusArray(arr1, arr2) {
       arr1
     );
     
-    
     return arr2; //something went wrong
   }
