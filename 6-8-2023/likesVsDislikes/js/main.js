@@ -4,9 +4,13 @@ function likeOrDislike(buttons) {
     
     // Iterate through buttons array
     for (i = 0; i < buttons.length; i++) {
-      
       // If current value equals currentState, set to nothing
-      (buttons[i] === currentState) ? currentState = "Nothing" : currentState = buttons[i]
+      if (buttons[i] === currentState) {
+        currentState = "Nothing"
+      } else (
+        currentState = buttons[i]
+      )
+      
       
     }
   
