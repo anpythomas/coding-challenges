@@ -10,7 +10,7 @@ def flatten_and_sort(array):
     # Once all nums added to consolodatedSortedNums, Iterate through consolodatedSortedNums and sort in asscending order
     # Create infinite while loop
     arrSorted = False
-    while arrSorted == False :
+    while arrSorted == False:
         # Set arrSorted to true
         arrSorted = True
         
