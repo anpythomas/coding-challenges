@@ -1,5 +1,5 @@
 function isEven(num) {
-    return num % 2 === 0;
+    return num % 2 !== 0;
   }
 
 let  seq = [2,4,6,8,1,2,5,4,3,2];
@@ -16,8 +16,6 @@ function dropWhile(arr, pred) {
             break
           }
     }
-
-    return arr
 }
 
 console.log(dropWhile(seq, isEven))

@@ -15,4 +15,4 @@ function SeriesSum(n) {
     return `${myInt.toFixed(2)}`
 }
 
-console.log(seriesSum(4))
+console.log(SeriesSum(4))

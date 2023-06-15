@@ -1,8 +1,6 @@
 function findNeedle(haystack) {
-    for (i = 0; i < haystack.length; i++) {
-      if (haystack[i] === "needle") {
-        return `found the needle at position ${i}`
-      }
-    }
-     return "Your function didn't return anything"
-   }
+    console.log(haystack.findIndex((element) => element === "needle")
+    // return "Found the needle at position ${haystack}"
+}
+
+console.log(findNeedle([1, 2, "needle", "hello"]))

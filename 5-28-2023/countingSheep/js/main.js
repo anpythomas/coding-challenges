@@ -1,7 +1,7 @@
+let myArray = [true , true, false, true, false, true, false, false, true , true, true, true, true, false, false, true, true]
+
 function countSheeps(arrayOfSheep) {
-    let count = 0
-    for (i = 0; i < arrayOfSheep.length; i++) {
-      arrayOfSheep[i] === true ? count+=1 : 'pass'
-    }
-    return count
-  }
+    return arrayOfSheep.filter(Boolean).length
+}
+
+console.log(countSheeps(myArray))
