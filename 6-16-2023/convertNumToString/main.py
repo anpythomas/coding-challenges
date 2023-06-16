@@ -1,2 +1,2 @@
 def number_to_string(num):
-    return str(num)
+    return f"{num}"
