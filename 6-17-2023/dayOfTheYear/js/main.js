@@ -15,13 +15,24 @@ function leapyear(year){
     }
   
     // Find out if year is leap year, if yes, add 1 extra day to totalDays
-    if (leapyear(arr[2])) {
-      totalDays += 1
+    
+    let isLeapYear = false
+    
+    if (arr[2] % 4 === 0) {
+      isLeapYear = true
     }
     
-    if (arr[2] === 1724) {
-      totalDays -= 1
+    if (arr[2] % 100 != 0) {
+      if (arr[2] % 400 === 0) {
+        isLeapYear = true
+      }
     }
+    
+  
+    
+  //   2812 / 4 = 703 = is a leap year
+  //   2812 / 100 = 281.2 = is a leap year
+  //     2812 / 400 = 7.03 = not a leap year
     
     // Return totalDays as integer
     return totalDays
