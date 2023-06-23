@@ -1,16 +1,18 @@
 function isVow(a){
-    for (i = 0; i < a.length; i++) {
-      
-      if (String.fromCharCode(a[i]) === 'a' || 
-          String.fromCharCode(a[i]) === 'e' || 
-          String.fromCharCode(a[i]) === 'i' ||
-          String.fromCharCode(a[i]) === 'o' || 
-          String.fromCharCode(a[i]) === 'u') {
+    return a.map(item => {
+        if(String.fromCharCode(item) === 'a' || 
+           String.fromCharCode(item) === 'e' || 
+           String.fromCharCode(item) === 'i' ||
+           String.fromCharCode(item) === 'o' || 
+           String.fromCharCode(item) === 'u') {
+          
+           return String.fromCharCode(item)
+                              
+        } else {
+          
+          return item
         
-        a[i] = String.fromCharCode(a[i])
-      
-      }
-    }
+        }
+    })
     
-    return a
-  }
+}
