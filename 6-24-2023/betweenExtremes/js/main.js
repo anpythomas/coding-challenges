@@ -1,21 +1,22 @@
 function betweenExtremes(numbers) {
-    // Create variable called numbersMin and assisgn numbers[0]
+  
+    // Create variables numbersMin and numbersMax and assisgn both to 0
     let numbersMin = numbers[0]
-    
-    // Create variable called numberMax and assign numbers[1]
     let numbersMax = numbers[0]
     
-    // Iterate through array, starting at index 2
-    for (i = 0; i < numbers.length; i++) {
-      
-      // If current element is greater than numbersMax, assign element to var
-      (numbers[i] > numbersMax) ? numbersMax = numbers[i] : 'none';
+    // Iterate through array. 
+      numbers.forEach(element => {
         
-      // Else if current element is lower than numbersMin, assign element to var
-      (numbers[i] < numbersMin) ? numbersMin = numbers[i] : 'okay';
-      
-    }
-    
+          // If element greater than numbersMax, assign numbersMax to element.
+          if (element > numbersMax) {
+            numbersMax = element
+          
+            // Else if element is less than numbersMin, assign numbersMin to element.
+          } else if (element < numbersMin) {
+            numbersMin = element
+          }
+        }
+      )
   
     // return numberMax minus numbersMin
     return numbersMax - numbersMin
