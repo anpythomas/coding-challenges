@@ -9,15 +9,14 @@ function betweenExtremes(numbers) {
     for (i = 0; i < numbers.length; i++) {
       
       // If current element is greater than numbersMax, assign element to var
-      if (numbers[i] > numbersMax) {
-        numbersMax = numbers[i]
+      (numbers[i] > numbersMax) ? numbersMax = numbers[i] : 'none';
         
       // Else if current element is lower than numbersMin, assign element to var
-      } else if (numbers[i] < numbersMin) {
-        numbersMin = numbers[i]
-      }    
+      (numbers[i] < numbersMin) ? numbersMin = numbers[i] : 'okay';
+      
     }
     
+  
     // return numberMax minus numbersMin
     return numbersMax - numbersMin
   }
