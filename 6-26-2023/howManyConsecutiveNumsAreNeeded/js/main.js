@@ -13,9 +13,8 @@ function compareNumbers(a, b) {
     for (i = arr[0]; i <= arr[arr.length-1]; i++) {
       
       // If a number is missing, increate ctr variable by 1
-      if (!arr.includes(i)) {
-        ctr += 1
-      }
+      (!arr.includes(i)) ? ctr += 1 : 'pass'
+      
     }
     
     // Return counter variable
