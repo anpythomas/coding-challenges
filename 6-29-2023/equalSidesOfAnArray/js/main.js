@@ -2,22 +2,19 @@ function findEvenIndex(arr){
     // Iterate through array
     for (i = 0; i < arr.length; i++) {
       
-      // Create two vars, leftSum and rightSum, inside array and set to 0
-      let leftSum = 0
-      let rightSum = 0
-         
-      // Create loop 0 through less than i
-      for (n = 0; n < i; n++) {
-        // for each iteration, add left sum to current element
-        leftSum += arr[n]
-      }
-          
-      // Create loop i+1 through less than arr.length
-      for (z = i+1; z < arr.length; z++) {
-        // for each iteration, add right sum to current element
-        rightSum += arr[z]
-      }
-        
+      // Find left sum and right sum
+      
+      // Iterate 0 thorugh i and find sum set equal to leftSum
+      const leftSum = arr.slice(0, i).reduce(
+        (acc, cv) => acc + cv, 
+        0
+      )
+      
+      // Iterate current index plus 1 through end of array, find sum set equal to rightSum
+      const rightSum = arr.slice(i+1, i.length).reduce(
+        (acc, cv) => acc + cv, 0
+      )
+            
       // If leftSum equals rightSum return current index
       if (leftSum === rightSum) {
         return i
