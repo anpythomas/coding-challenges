@@ -106,8 +106,8 @@ function encode  (message, key, initShift)  {
         console.log(`letterPositionShifted: ${letterPositionShifted}`)
         
         // If letterPositionShifted > 25, then subtract 26
-        if (letterPositionShifted > 25) {
-          letterPositionShifted -= 26
+        if (letterPositionShifted < 0) {
+          letterPositionShifted += 26
         }
         
         decryptedMsg += key[letterPositionShifted]
