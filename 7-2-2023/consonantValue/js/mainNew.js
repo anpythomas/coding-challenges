@@ -14,31 +14,35 @@ function solve(s) {
 
   // Iterate through string 's'
   for (i = 0; i < s.length; i++) {
-    console.log(i, s.length-1)
     
     // Declare tmpResponse and assign to response if 's' is in 'letters' array
     let tmpResponse = letters.indexOf(s[i])
     
     // If char in 'letters', add index to tmpSum
-    if (tmpResponse !== -1) {
+    if (tmpResponse !== -1 )  {
       tmpSum += tmpResponse
+      
+      if (i === s.length-1) {
+        if (tmpSum > highestSum) {
+          return tmpSum
+        } else {
+          return highestSum
+        }
+      }
     
       // Else, check if tmpSum is greater than highestSum. Set tmpSum equal to zero
-    } else {
-      
+    } else if (tmpResponse === -1) {
       // If yes, assign highestSum equal to tmpSum
       if (tmpSum > highestSum) {
         highestSum = tmpSum
-        tmpSum = 0
-      }      
-    }
+      }
+      tmpSum = 0 
+    } 
   }
 
 
   // Return highestSum
   console.log(highestSum)
-  return highestSum 
+  return highestSum
   
 };
-
-console.log(solve('az'))
