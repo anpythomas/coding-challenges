@@ -1,8 +1,5 @@
 export function findAverage(array: number[]): number {  
   
-    const sum = array.reduce(
-      (acc, cv) => acc += cv, 0
-    )
-    
-    return array.length ? sum / array.length : 0
+    return array.length ? array.reduce(
+      (acc, cv) => acc += cv, 0) / array.length : 0
   }
