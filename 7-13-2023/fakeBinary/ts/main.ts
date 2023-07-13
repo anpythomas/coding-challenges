@@ -1,8 +1,11 @@
 export const fakeBin = (x:string):string => {
+  
+    let below = "01234"
+    
     let newString = ''
     
     for (let i = 0; i < x.length; i++) {
-      Number(x[i]) < 5 ? newString += '0' : newString += '1'
+       below.includes(x[i]) ? newString += '0' : newString += '1'
     }
     
     return newString
