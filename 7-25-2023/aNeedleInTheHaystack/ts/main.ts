@@ -3,9 +3,7 @@ export function findNeedle(haystack: any[]):string {
     let positionFound: number = 0;
     
     for (let i = 0; i < haystack.length; i++) {
-      if (haystack[i] === 'needle') {
-        positionFound = i
-      }
+      haystack[i] === 'needle' ? positionFound = i : null
     }
       
     return `found the needle at position ${positionFound}`
