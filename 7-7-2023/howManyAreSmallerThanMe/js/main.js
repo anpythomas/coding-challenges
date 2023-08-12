@@ -17,4 +17,3 @@ function smaller(nums) {
     
     return myFinalArray
   }
-  

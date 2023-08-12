@@ -16,7 +16,6 @@ function findHack(arr) {
           // If letter grade in gradeValues, add value. If not do nothing
           gradeValues[arr[i][n][z]] ? tmpSum += gradeValues[arr[i][n][z]] : 'pass';
           
-          
           // If grade not equal to 'A' or 'B' set badStudent to true
           (arr[i][n][z] !== 'A' && arr[i][n][z] !== 'B') ? badStudent = true : 'pass';
         }

@@ -9,4 +9,4 @@ export function findMultiples(integer: number, limit: number): number[] {
     return myArray
   }
 
-  console.log(findMultiples(5, 25))
+console.log(findMultiples(5, 25))
