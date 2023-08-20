@@ -41,3 +41,31 @@ export const charCodeAtFunc2 = (myStr: string, myI: number) => {
 console.log(charCodeAtFunc2('Hi, Willie it Joe T', 4))
 
 console.log("Run, you beaaaassttt!!!".charCodeAt(10))
+
+
+// concat - concatenates the string values of two or more string and returns a new string since string in js are immutable
+
+
+// in modern day js, it's more common to use the + operator or string literals to concatenat strings
+
+// time complexity - worst cast scenario is O(n + m), where n is the length of the first string and m is the length of all other strings being concatenated. okay for shorter strings, but for longer strings or using in a loop, this can become probablamatic becuase each time this method is called it creates a new string. for a loop with many iterations, you should consider pushing to an arry in the loop and using join after the loop is finished to convert to string.
+
+
+export function myConcatFunc99 (str1: string, str2: string) : string {
+    let fillerString: string = 'the'
+    return str1.concat(' ', fillerString, ' ', str2)
+}
+
+console.log(myConcatFunc99('jimmie', 'bull'))
+
+export const aConcatFunction = (myStr: string, yourStr: string, aString: string) : string => {
+    let theConcatedString: string = myStr.concat(' ', yourStr, ' ', aString)
+    return theConcatedString
+}
+
+console.log(aConcatFunction('space', 'flight', 'no.77'))
+
+let string1: string = "run"
+let string2: string = "Forrest"
+
+console.log(string1[0].toUpperCase().concat(string1.slice(1, string1.length), ', ', string2, ', ', string1, '!'))
