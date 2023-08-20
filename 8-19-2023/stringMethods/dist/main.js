@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -49,3 +49,18 @@ console.log((0, exports.aConcatFunction)('space', 'flight', 'no.77'));
 let string1 = "run";
 let string2 = "Forrest";
 console.log(string1[0].toUpperCase().concat(string1.slice(1, string1.length), ', ', string2, ', ', string1, '!'));
+// includes - this method searches if a string is in another string. returning true if it is and false if not. this search is case sensitive.
+// this method takes a second argument which is the postion to start searching at. this defaults to zero if left empty.
+// time complexity - the worst case is O(n*m) though this can be faster if the string is matched before the end of the mainstring. This can be faster in most modern JS search engines. For most common apps, this method is sufficient in term for speed.
+function includesFunc(str1, str2) {
+    return str1.includes(str2);
+}
+exports.includesFunc = includesFunc;
+console.log(includesFunc('Pete is crazy', 'is'));
+const aIncludesFunction = (string1, string2) => {
+    let hasString = string1.includes(string2, 3);
+    return hasString;
+};
+exports.aIncludesFunction = aIncludesFunction;
+console.log((0, exports.aIncludesFunction)('sammie the bull', 'mie'));
+console.log("The gas is hott".includes('Gas'));

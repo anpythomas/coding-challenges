@@ -45,7 +45,6 @@ console.log("Run, you beaaaassttt!!!".charCodeAt(10))
 
 // concat - concatenates the string values of two or more string and returns a new string since string in js are immutable
 
-
 // in modern day js, it's more common to use the + operator or string literals to concatenat strings
 
 // time complexity - worst cast scenario is O(n + m), where n is the length of the first string and m is the length of all other strings being concatenated. okay for shorter strings, but for longer strings or using in a loop, this can become probablamatic becuase each time this method is called it creates a new string. for a loop with many iterations, you should consider pushing to an arry in the loop and using join after the loop is finished to convert to string.
@@ -69,3 +68,25 @@ let string1: string = "run"
 let string2: string = "Forrest"
 
 console.log(string1[0].toUpperCase().concat(string1.slice(1, string1.length), ', ', string2, ', ', string1, '!'))
+
+
+// includes - this method searches if a string is in another string. returning true if it is and false if not. this search is case sensitive.
+
+// this method takes a second argument which is the postion to start searching at. this defaults to zero if left empty.
+
+// time complexity - the worst case is O(n*m) though this can be faster if the string is matched before the end of the mainstring. This can be faster in most modern JS search engines. For most common apps, this method is sufficient in term for speed.
+
+export function includesFunc (str1: string, str2: string) : boolean {
+    return str1.includes(str2)
+}
+
+console.log(includesFunc('Pete is crazy', 'is'))
+
+export const aIncludesFunction = (string1: string, string2: string) : boolean => {
+    let hasString: boolean = string1.includes(string2, 3)
+    return hasString
+}
+
+console.log(aIncludesFunction('sammie the bull', 'mie'))
+
+console.log("The gas is hott".includes('Gas'))
