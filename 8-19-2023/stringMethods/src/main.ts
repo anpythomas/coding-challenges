@@ -90,3 +90,25 @@ export const aIncludesFunction = (string1: string, string2: string) : boolean =>
 console.log(aIncludesFunction('sammie the bull', 'mie'))
 
 console.log("The gas is hott".includes('Gas'))
+
+
+// indexof - takes a string as a parameter and searches another string showing the first occurance of the substring. it takes an optional parameter of type number and a returns the index of any substring equal to or greater than that position.
+
+// return -1 if substring not found
+
+// time complexity - the worst case is O(n*m) though this can be faster if the string is matched before the end of the mainstring. This can be faster in most modern JS search engines. For most common apps, this method is sufficient in term for speed.
+
+export function indexOfFunction (subString: string, fullString: string) :number {
+    return fullString.indexOf(subString, 20)
+}
+
+console.log(indexOfFunction('bat', 'the fastest bat in the world is the equator bat, thought the scorpion bat is a close second.'))
+
+export const indexOfFunc = (subStr: string, mainStr: string) :number => {
+    let firstOccuarence: number = mainStr.indexOf(subStr)
+    return mainStr.indexOf(subStr, firstOccuarence+1)
+}
+
+console.log(indexOfFunc('at', 'it\'s at it\'s worst when at another\'s level'))
+
+console.log("he who speaks is not yet spoken".indexOf("he"))

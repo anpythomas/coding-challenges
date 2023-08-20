@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -64,3 +64,18 @@ const aIncludesFunction = (string1, string2) => {
 exports.aIncludesFunction = aIncludesFunction;
 console.log((0, exports.aIncludesFunction)('sammie the bull', 'mie'));
 console.log("The gas is hott".includes('Gas'));
+// indexof - takes a string as a parameter and searches another string showing the first occurance of the substring. it takes an optional parameter of type number and a returns the index of any substring equal to or greater than that position.
+// return -1 if substring not found
+// time complexity - the worst case is O(n*m) though this can be faster if the string is matched before the end of the mainstring. This can be faster in most modern JS search engines. For most common apps, this method is sufficient in term for speed.
+function indexOfFunction(subString, fullString) {
+    return fullString.indexOf(subString, 20);
+}
+exports.indexOfFunction = indexOfFunction;
+console.log(indexOfFunction('bat', 'the fastest bat in the world is the equator bat, thought the scorpion bat is a close second.'));
+const indexOfFunc = (subStr, mainStr) => {
+    let firstOccuarence = mainStr.indexOf(subStr);
+    return mainStr.indexOf(subStr, firstOccuarence + 1);
+};
+exports.indexOfFunc = indexOfFunc;
+console.log((0, exports.indexOfFunc)('at', 'it\'s at it\'s worst when at another\'s level'));
+console.log("he who speaks is not yet spoken".indexOf("he"));
