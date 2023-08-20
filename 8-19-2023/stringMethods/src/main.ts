@@ -18,3 +18,26 @@ export function charAtFunc2 (str: string, i: number) : string{
 console.log(charAtFunc2('Kats are fast!', 6))
 
 console.log("Wombat".charAt(5))
+
+
+// charCodeAt - this method takes a number as an agrument and returns the unicode value at that index
+
+// behavior 1) if the index is out of range (negative or greater than the length of the string), this method will return a Nan value.
+
+// time complexity - O(1) constant time since we are searching by index
+
+export function charCodeAtFunc (aString: string, anIndex: number) : number {
+    return aString.charCodeAt(anIndex)
+}
+
+console.log(charCodeAtFunc('Tesla Powered', 4))
+
+export const charCodeAtFunc2 = (myStr: string, myI: number) => {
+    let myAscii: number = myStr.charCodeAt(myI)
+    
+    return myAscii
+}
+
+console.log(charCodeAtFunc2('Hi, Willie it Joe T', 4))
+
+console.log("Run, you beaaaassttt!!!".charCodeAt(10))
