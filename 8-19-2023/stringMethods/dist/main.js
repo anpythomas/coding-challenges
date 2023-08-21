@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -79,3 +79,17 @@ const indexOfFunc = (subStr, mainStr) => {
 exports.indexOfFunc = indexOfFunc;
 console.log((0, exports.indexOfFunc)('at', 'it\'s at it\'s worst when at another\'s level'));
 console.log("he who speaks is not yet spoken".indexOf("he"));
+// match - tries to match a string against a regular expression. returns an array with all matches or null if none match. If the g flag is used, all occurences returned. If g flag not used, only first occurance returned.
+// time complexity - worst case: 1) for complex regex, exponential time. 2) simple regex, O(n)
+function aMatchFunction(str1) {
+    return str1.match(/[A-Z]/g);
+}
+exports.aMatchFunction = aMatchFunction;
+console.log(aMatchFunction('Hello, World'));
+let theMatchFunc = (myString) => {
+    let myMatches = myString.match(/[A-Z]/g);
+    return myMatches;
+};
+exports.theMatchFunc = theMatchFunc;
+console.log((0, exports.theMatchFunc)('It\'s sammie the bull, run!'));
+console.log('Pimp the seahorse. Pimp a seahorse.'.match(/mp/g));
