@@ -112,3 +112,23 @@ export const indexOfFunc = (subStr: string, mainStr: string) :number => {
 console.log(indexOfFunc('at', 'it\'s at it\'s worst when at another\'s level'))
 
 console.log("he who speaks is not yet spoken".indexOf("he"))
+
+
+// match - tries to match a string against a regular expression. returns an array with all matches or null if none match. If the g flag is used, all occurences returned. If g flag not used, only first occurance returned.
+
+// time complexity - worst case: 1) for complex regex, exponential time. 2) simple regex, O(n)
+
+export function aMatchFunction (str1: string) {
+    return str1.match(/[A-Z]/g)
+}
+
+console.log(aMatchFunction('Hello, World'))
+
+export let theMatchFunc = (myString: string) => {
+    let myMatches: any = myString.match(/[A-Z]/g)
+    return myMatches
+}
+
+console.log(theMatchFunc('It\'s sammie the bull, run!'))
+
+console.log('Pimp the seahorse. Pimp a seahorse.'.match(/mp/g))
