@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -93,3 +93,18 @@ let theMatchFunc = (myString) => {
 exports.theMatchFunc = theMatchFunc;
 console.log((0, exports.theMatchFunc)('It\'s sammie the bull, run!'));
 console.log('Pimp the seahorse. Pimp a seahorse.'.match(/mp/g));
+// repeat - accept a string and returns a new string with the requested number of the original string that was requested
+// will throw 'RangeError' if count is negative or if count overflows maximum string length
+// time complexity - big O(n)
+function repeatFunc(myStr) {
+    return myStr.repeat(3);
+}
+exports.repeatFunc = repeatFunc;
+console.log(repeatFunc('hello, world'));
+const thisIsMyRepeatFunction = (str1) => {
+    const finalString = str1.repeat(10);
+    return finalString;
+};
+exports.thisIsMyRepeatFunction = thisIsMyRepeatFunction;
+console.log((0, exports.thisIsMyRepeatFunction)('run'));
+console.log('football '.repeat(4));

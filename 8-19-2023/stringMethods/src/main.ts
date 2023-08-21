@@ -132,3 +132,25 @@ export let theMatchFunc = (myString: string) => {
 console.log(theMatchFunc('It\'s sammie the bull, run!'))
 
 console.log('Pimp the seahorse. Pimp a seahorse.'.match(/mp/g))
+
+
+// repeat - accept a string and returns a new string with the requested number of the original string that was requested
+
+// will throw 'RangeError' if count is negative or if count overflows maximum string length
+
+// time complexity - big O(n)
+
+export function repeatFunc (myStr: string) :string {
+    return myStr.repeat(3)
+}
+
+console.log(repeatFunc('hello, world'))
+
+export const thisIsMyRepeatFunction = (str1: string) :string => {
+    const finalString: string = str1.repeat(10)
+    return finalString
+}
+
+console.log(thisIsMyRepeatFunction('run'))
+
+console.log('football '.repeat(4))
