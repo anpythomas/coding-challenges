@@ -155,4 +155,25 @@ console.log(thisIsMyRepeatFunction('run'))
 
 console.log('football '.repeat(4))
 
-//testing
+
+// replace - take a string and searches another string for the original string, replacing the initial string in the larger string. this only replaces the first occurence
+
+// add'l info - this works with both strings and regular expressions
+
+// time complexity - big O(n) for string replace, with regex it can be worse due to the back tracking that might be needed by the regex engine
+
+export const thisWillReplace = (subStr: string, mainStr: string) :string => {
+    return mainStr.replace('mercedes', subStr)
+}
+
+console.log(thisWillReplace('bentley', "bill the bull borrowed his mercedes!"))
+
+export function replaceFunc ( str2: string) :string {
+    const myRegexVar: RegExp = /watch/g
+    const newString: string = str2.replace(myRegexVar, 'build')
+    return newString
+}
+
+console.log(replaceFunc('Don\'t watch the throne, watch the throne..'))
+
+console.log('flying into space'.replace('space', 'place'))

@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -108,4 +108,19 @@ const thisIsMyRepeatFunction = (str1) => {
 exports.thisIsMyRepeatFunction = thisIsMyRepeatFunction;
 console.log((0, exports.thisIsMyRepeatFunction)('run'));
 console.log('football '.repeat(4));
-//testing
+// replace - take a string and searches another string for the original string, replacing the initial string in the larger string. this only replaces the first occurence
+// add'l info - this works with both strings and regular expressions
+// time complexity - big O(n) for string replace, with regex it can be worse due to the back tracking that might be needed by the regex engine
+const thisWillReplace = (subStr, mainStr) => {
+    return mainStr.replace('mercedes', subStr);
+};
+exports.thisWillReplace = thisWillReplace;
+console.log((0, exports.thisWillReplace)('bentley', "bill the bull borrowed his mercedes!"));
+function replaceFunc(str2) {
+    const myRegexVar = /watch/g;
+    const newString = str2.replace(myRegexVar, 'build');
+    return newString;
+}
+exports.replaceFunc = replaceFunc;
+console.log(replaceFunc('Don\'t watch the throne, watch the throne..'));
+console.log('flying into space'.replace('space', 'place'));
