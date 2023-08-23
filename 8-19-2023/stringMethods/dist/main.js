@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.toUppFunction = exports.upperFunc = exports.myLowerCaseFunction = exports.lowerCaseFunc = exports.substrDepcreated = exports.depSubstringFunc = exports.aFunc = exports.theSplit = exports.uSlice = exports.iSlice = exports.mySerachFunc = exports.searchFunction = exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.trimThis = exports.toTrim = exports.toUppFunction = exports.upperFunc = exports.myLowerCaseFunction = exports.lowerCaseFunc = exports.substrDepcreated = exports.depSubstringFunc = exports.aFunc = exports.theSplit = exports.uSlice = exports.iSlice = exports.mySerachFunc = exports.searchFunction = exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -210,3 +210,18 @@ function toUppFunction(myString) {
 exports.toUppFunction = toUppFunction;
 console.log(toUppFunction('hello, world'));
 console.log('See spike jump!'.toUpperCase());
+// trim - removes white space from begining and ending of string
+// does not change original string
+// time complexity - O(n)
+function toTrim(theString) {
+    return theString.trim();
+}
+exports.toTrim = toTrim;
+console.log(toTrim('    trim mee......    '));
+const trimThis = (str1) => {
+    const trimmedString = str1.trim();
+    return trimmedString;
+};
+exports.trimThis = trimThis;
+console.log((0, exports.trimThis)('     i need trimming!!!           '));
+console.log('     i\'ve been trimmed     '.trim());
