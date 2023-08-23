@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.myLowerCaseFunction = exports.lowerCaseFunc = exports.substrDepcreated = exports.depSubstringFunc = exports.aFunc = exports.theSplit = exports.uSlice = exports.iSlice = exports.mySerachFunc = exports.searchFunction = exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.toUppFunction = exports.upperFunc = exports.myLowerCaseFunction = exports.lowerCaseFunc = exports.substrDepcreated = exports.depSubstringFunc = exports.aFunc = exports.theSplit = exports.uSlice = exports.iSlice = exports.mySerachFunc = exports.searchFunction = exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -181,7 +181,7 @@ const substrDepcreated = (mainStr) => {
 };
 exports.substrDepcreated = substrDepcreated;
 console.log((0, exports.substrDepcreated)('1234567891011121314'));
-// toLowerCase - takes in a string and returns the string all all lowercased
+// toLowerCase() - takes in a string and returns the string all all lowercased
 // the original string is not changed
 // time complexity - O(n)
 console.log('ASJdkeEifej'.toLowerCase());
@@ -195,3 +195,18 @@ const myLowerCaseFunction = (string1) => {
 };
 exports.myLowerCaseFunction = myLowerCaseFunction;
 console.log((0, exports.myLowerCaseFunction)('WorlD'));
+// toUpperCase() - takes in a string and returns the string in all upper case
+// the orinal string is not changed
+// time complexity - O(n)
+const upperFunc = (str1) => {
+    return str1.toUpperCase();
+};
+exports.upperFunc = upperFunc;
+console.log((0, exports.upperFunc)('acbdefgh'));
+function toUppFunction(myString) {
+    const finalString = myString.toUpperCase();
+    return finalString;
+}
+exports.toUppFunction = toUppFunction;
+console.log(toUppFunction('hello, world'));
+console.log('See spike jump!'.toUpperCase());

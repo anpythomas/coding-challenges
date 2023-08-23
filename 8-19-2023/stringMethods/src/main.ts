@@ -289,3 +289,17 @@ console.log(myLowerCaseFunction('WorlD'))
 
 // time complexity - O(n)
 
+export const upperFunc = (str1: string) :string => {
+    return str1.toUpperCase()
+}
+
+console.log(upperFunc('acbdefgh'))
+
+export function toUppFunction (myString: string) :string {
+    const finalString: string = myString.toUpperCase()
+    return finalString
+}
+
+console.log(toUppFunction('hello, world'))
+
+console.log('See spike jump!'.toUpperCase())
