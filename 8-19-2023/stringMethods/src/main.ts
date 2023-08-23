@@ -179,6 +179,21 @@ console.log(replaceFunc('Don\'t watch the throne, watch the throne..'))
 console.log('flying into space'.replace('space', 'place'))
 
 
-// search - searches for a mathch between a regular expression and a string, returning the index of the first match.
+// search - searches for a mathch between a regular expression and a string, returning the index of the first match. also works with searching for substrings and not only regex
+
+// time complexity - O(n) for string. Usually higher for regex
 
 console.log('sammie the bull moves quick'.search(/sam/))
+
+export const searchFunction = (str1: string, subString: string) : number => {
+    const myIndex: number = str1.search(subString)
+    return myIndex
+}
+
+console.log(searchFunction('Hello, world!', 'orl'))
+
+export function mySerachFunc (string1: string, regExVal: RegExp) :number {
+    return string1.search(regExVal)
+}
+
+console.log(mySerachFunc('We don\'t walk, we balk!', /walk/))

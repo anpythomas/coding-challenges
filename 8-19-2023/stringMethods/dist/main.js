@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.mySerachFunc = exports.searchFunction = exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -124,5 +124,17 @@ function replaceFunc(str2) {
 exports.replaceFunc = replaceFunc;
 console.log(replaceFunc('Don\'t watch the throne, watch the throne..'));
 console.log('flying into space'.replace('space', 'place'));
-// search - searches for a mathch between a regular expression and a string, returning the index of the first match.
+// search - searches for a mathch between a regular expression and a string, returning the index of the first match. also works with searching for substrings and not only regex
+// time complexity - O(n) for string. Usually higher for regex
 console.log('sammie the bull moves quick'.search(/sam/));
+const searchFunction = (str1, subString) => {
+    const myIndex = str1.search(subString);
+    return myIndex;
+};
+exports.searchFunction = searchFunction;
+console.log((0, exports.searchFunction)('Hello, world!', 'orl'));
+function mySerachFunc(string1, regExVal) {
+    return string1.search(regExVal);
+}
+exports.mySerachFunc = mySerachFunc;
+console.log(mySerachFunc('We don\'t walk, we balk!', /walk/));
