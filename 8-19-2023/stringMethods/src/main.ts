@@ -260,3 +260,24 @@ export const substrDepcreated = (mainStr: string) :string => {
 }
 
 console.log(substrDepcreated('1234567891011121314'))
+
+
+// toLowerCase - takes in a string and returns the string all all lowercased
+
+// the original string is not changed
+
+// time complexity - O(n)
+
+console.log('ASJdkeEifej'.toLowerCase())
+
+export function lowerCaseFunc(thisString: string) :string {
+    return thisString.toLowerCase()
+}
+
+console.log(lowerCaseFunc('HELLO'))
+
+export const myLowerCaseFunction = (string1: string) :string => {
+    return string1.toLowerCase()
+}
+
+console.log(myLowerCaseFunction('WorlD'))
