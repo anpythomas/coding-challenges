@@ -238,3 +238,25 @@ export function aFunc (string1: string) {
 }
 
 console.log(aFunc('It\s the last of the month, the month, the month'))
+
+
+// substr - returns a portion of a string starting a spcified postion and extending for a given number or characters afterwards
+
+// has been depracted and replaced with slice
+
+// time complexity - O(k) where k is the the length of the substr
+
+console.log('abcdefghijk'.substr(3, 4))
+
+export function depSubstringFunc (fullStr: string) :string{
+    return fullStr.substr(3, 10)
+}
+
+console.log(depSubstringFunc('twitter has been replaced with x :/'))
+
+export const substrDepcreated = (mainStr: string) :string => {
+    const myString: string = mainStr.substr(2, 4)
+    return myString
+}
+
+console.log(substrDepcreated('1234567891011121314'))
