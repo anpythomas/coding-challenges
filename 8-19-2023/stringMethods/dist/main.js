@@ -124,3 +124,5 @@ function replaceFunc(str2) {
 exports.replaceFunc = replaceFunc;
 console.log(replaceFunc('Don\'t watch the throne, watch the throne..'));
 console.log('flying into space'.replace('space', 'place'));
+// search - searches for a mathch between a regular expression and a string, returning the index of the first match.
+console.log('sammie the bull moves quick'.search(/sam/));
