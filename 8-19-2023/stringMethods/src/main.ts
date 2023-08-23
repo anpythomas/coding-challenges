@@ -197,3 +197,25 @@ export function mySerachFunc (string1: string, regExVal: RegExp) :number {
 }
 
 console.log(mySerachFunc('We don\'t walk, we balk!', /walk/))
+
+
+// slice - the slice method removes a section from a string and creates a new string, without changing the original string
+
+// if index start or end is not valid, an empty string is returned
+
+// time complexity - O(k) where k is the length of the slice
+
+console.log('I love house music.'.slice(7, 12))
+
+export function iSlice (iString: string, begIndex: number, endIndex: number) :string {
+    return iString.slice(begIndex, endIndex)
+}
+
+console.log(iSlice('hello', 2, 4))
+
+export const uSlice = (str: string, intA: number, intB: number) :string => {
+    const newStr: string = str.slice(intA, intB)
+    return newStr
+}
+
+console.log(uSlice('Outerspace', 3, 9))

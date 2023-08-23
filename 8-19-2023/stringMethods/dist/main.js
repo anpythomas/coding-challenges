@@ -1,7 +1,7 @@
 "use strict";
 // charAt - this method takes a number as input and returns the char located at that index. 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.mySerachFunc = exports.searchFunction = exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
+exports.uSlice = exports.iSlice = exports.mySerachFunc = exports.searchFunction = exports.replaceFunc = exports.thisWillReplace = exports.thisIsMyRepeatFunction = exports.repeatFunc = exports.theMatchFunc = exports.aMatchFunction = exports.indexOfFunc = exports.indexOfFunction = exports.aIncludesFunction = exports.includesFunc = exports.aConcatFunction = exports.myConcatFunc99 = exports.charCodeAtFunc2 = exports.charCodeAtFunc = exports.charAtFunc2 = exports.charAtFunc = void 0;
 // behavior 1) if you don't include a number as argument, then the method will return the first char in the string. 2) If you pass a negative number or a number longer than the string, charAt will return an empty string.
 // Time complexity - O(1) contant time
 const charAtFunc = (mystring, index) => {
@@ -138,3 +138,18 @@ function mySerachFunc(string1, regExVal) {
 }
 exports.mySerachFunc = mySerachFunc;
 console.log(mySerachFunc('We don\'t walk, we balk!', /walk/));
+// slice - the slice method removes a section from a string and creates a new string, without changing the original string
+// if index start or end is not valid, an empty string is returned
+// time complexity - O(k) where k is the length of the slice
+console.log('I love house music.'.slice(7, 12));
+function iSlice(iString, begIndex, endIndex) {
+    return iString.slice(begIndex, endIndex);
+}
+exports.iSlice = iSlice;
+console.log(iSlice('hello', 2, 4));
+const uSlice = (str, intA, intB) => {
+    const newStr = str.slice(intA, intB);
+    return newStr;
+};
+exports.uSlice = uSlice;
+console.log((0, exports.uSlice)('Outerspace', 3, 9));
