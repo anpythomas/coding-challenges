@@ -303,3 +303,25 @@ export function toUppFunction (myString: string) :string {
 console.log(toUppFunction('hello, world'))
 
 console.log('See spike jump!'.toUpperCase())
+
+
+// trim - removes white space from begining and ending of string
+
+// does not change original string
+
+// time complexity - O(n)
+
+export function toTrim (theString: string) :string {
+    return theString.trim()
+}
+
+console.log(toTrim('    trim mee......    '))
+
+export const trimThis = (str1: string) :string => {
+    const trimmedString: string = str1.trim()
+    return trimmedString
+}
+
+console.log(trimThis('     i need trimming!!!           '))
+
+console.log('     i\'ve been trimmed     '.trim())
