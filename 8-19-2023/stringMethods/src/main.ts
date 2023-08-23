@@ -219,3 +219,22 @@ export const uSlice = (str: string, intA: number, intB: number) :string => {
 }
 
 console.log(uSlice('Outerspace', 3, 9))
+
+
+// split - this method takes a pattern, and divides this string into an ordered list based on the pattern, puts these substrings into an array, and returns the array
+
+// time complexity - O(n)
+
+console.log('1.2.3.4.5'.split('.'))
+
+export const theSplit = (str1:string) => {
+    return str1.split(' ')
+}
+
+console.log(theSplit('It\s the last of the month, the month, the month'))
+
+export function aFunc (string1: string) {
+    return string1.split(/[\s,;]+/)
+}
+
+console.log(aFunc('It\s the last of the month, the month, the month'))
