@@ -1,21 +1,13 @@
-export function capitals(word: string): number[] {
-    // Create blank array called final array to store indexes
-    let finalArray: number[] = [];
+export function findCapitalIndices(word: string){
 
-    // Iterate through string
-    for (let i = 0; i < word.length; i++) {
-        // Declare variable tmpChar and set to character ascii code
-        const tmpChar: number = word.charCodeAt(i);
-
-        // Check if between codes for A - Z
-        if (tmpChar >= 65 && tmpChar <= 90) {
-            // If yes, add to finalArray
-            finalArray.push(i);
+    return word.split("")
+        .map((elem, index) => {
+        if (elem.charCodeAt(0) >= 65 && elem.charCodeAt(0) <= 90) {
+            return index;
         }
-    }
-
-    // Return finalArray
-    return finalArray;
+        return undefined;
+    })
+    .filter(item => item !== undefined)
 }
 
-console.log(capitals('adfEjefe3944EJeijadfiiIFj'))
+console.log(findCapitalIndices("fEjfFj"));
