@@ -1,21 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.capitals = void 0;
-function capitals(word) {
-    // Create blank array called final array to store indexes
-    let finalArray = [];
-    // Iterate through string
-    for (let i = 0; i < word.length; i++) {
-        // Declare variable tmpChar and set to character ascii code
-        const tmpChar = word.charCodeAt(i);
-        // Check if between codes for A - Z
-        if (tmpChar >= 65 && tmpChar <= 90) {
-            // If yes, add to finalArray
-            finalArray.push(i);
+exports.findCapitalIndices = void 0;
+function findCapitalIndices(word) {
+    return word.split("")
+        .map((elem, index) => {
+        if (elem.charCodeAt(0) >= 65 && elem.charCodeAt(0) <= 90) {
+            return index;
         }
-    }
-    // Return finalArray
-    return finalArray;
+        return undefined;
+    })
+        .filter(item => item !== undefined);
 }
-exports.capitals = capitals;
-console.log(capitals('adfEjefe3944EJeijadfiiIFj'));
+exports.findCapitalIndices = findCapitalIndices;
+console.log(findCapitalIndices("fEjfFj"));
