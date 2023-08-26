@@ -1,17 +1,9 @@
 "use strict";
-function disemvowel(str) {
-    // Create string with vowels called allVowels
-    let allVowels = "aeiou";
-    // Create final string to return called cleanString
-    let cleanString = "";
-    // Iterate through string
-    for (let i = 0; i < str.length; i++) {
-        // If char NOT in allVowels string, add element to cleanString
-        if (!allVowels.includes(str[i].toLowerCase())) {
-            cleanString += str[i];
-        }
-    }
-    // return a string called cleanString
-    return cleanString;
-}
-console.log(disemvowel('How arE you?'));
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.removeVowels = void 0;
+const removeVowels = (originalComment) => {
+    const vowels = 'aeiouAEIOU';
+    return [...originalComment].filter(char => !vowels.includes(char)).join(' ');
+};
+exports.removeVowels = removeVowels;
+console.log((0, exports.removeVowels)('Hello, worlD'));
