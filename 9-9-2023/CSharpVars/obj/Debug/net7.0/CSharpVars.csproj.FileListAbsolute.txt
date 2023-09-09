@@ -1,0 +1,14 @@
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/bin/Debug/net7.0/CSharpVars
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/bin/Debug/net7.0/CSharpVars.deps.json
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/bin/Debug/net7.0/CSharpVars.runtimeconfig.json
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/bin/Debug/net7.0/CSharpVars.dll
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/bin/Debug/net7.0/CSharpVars.pdb
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/CSharpVars.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/CSharpVars.AssemblyInfoInputs.cache
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/CSharpVars.AssemblyInfo.cs
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/CSharpVars.csproj.CoreCompileInputs.cache
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/CSharpVars.dll
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/refint/CSharpVars.dll
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/CSharpVars.pdb
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/CSharpVars.genruntimeconfig.cache
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-9-2023/CSharpVars/obj/Debug/net7.0/ref/CSharpVars.dll
