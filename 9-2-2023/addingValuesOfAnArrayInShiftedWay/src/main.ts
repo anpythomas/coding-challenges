@@ -1,20 +1,14 @@
-export function addingShifted(
-    arrayOfArrays: number[][],
-    shift: number
-): number[] {
-    console.log(arrayOfArrays, shift);
+export function addingShifted(arrayOfArrays: number[][], shift: number) :number[] {
 
-    let answer: number[] = [];
-
-    // Create a loop that loops for the length of the parent (outer array)
-    for (let i = 0; i < arrayOfArrays.length; i++) {
-        for (let n = 0; n < arrayOfArrays[i].length; n++) {
-            console.log(arrayOfArrays[i][n]);
-        }
-        console.log("");
-    }
-
-    return answer;
+    return []
+    
 }
 
-console.log(addingShifted([[], [], []], 2))
+console.log(addingShifted([ 
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]
+], 2))
+
+
+// 1, 2, 7, 5, 13, 8, 9

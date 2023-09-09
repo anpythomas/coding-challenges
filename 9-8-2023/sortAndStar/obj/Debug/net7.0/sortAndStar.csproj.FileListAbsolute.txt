@@ -1,0 +1,14 @@
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/bin/Debug/net7.0/sortAndStar
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/bin/Debug/net7.0/sortAndStar.deps.json
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/bin/Debug/net7.0/sortAndStar.runtimeconfig.json
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/bin/Debug/net7.0/sortAndStar.dll
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/bin/Debug/net7.0/sortAndStar.pdb
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/sortAndStar.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/sortAndStar.AssemblyInfoInputs.cache
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/sortAndStar.AssemblyInfo.cs
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/sortAndStar.csproj.CoreCompileInputs.cache
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/sortAndStar.dll
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/refint/sortAndStar.dll
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/sortAndStar.pdb
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/sortAndStar.genruntimeconfig.cache
+/Users/bradleythomas/VSCode_Projects/coding_challenges/9-8-2023/sortAndStar/obj/Debug/net7.0/ref/sortAndStar.dll
