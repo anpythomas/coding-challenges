@@ -13,14 +13,20 @@ namespace CSharpVars
             // Create instance of the Person class
             Person person = new Person("Andy", 24);
 
+            // Create instanc of the Alien class
+            Alien alien = new Alien("Zandaar", "Peanut M&M", 23);
+
             // Use the intance to call the Hello method
             Console.WriteLine(greet.Hello("Andy"));
 
             // Use the instance to call the Hola method
             Console.WriteLine(greet.Hola("Andres"));
 
+            // Use the instance to call the Introduce method
             Console.WriteLine(person.Introduce());
 
+            // Use the instance to call the SayHi method
+            Console.Write(alien.SayHi());
         }
     }
 
