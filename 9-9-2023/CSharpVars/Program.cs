@@ -10,11 +10,17 @@ namespace CSharpVars
             // Create instance of the Greeting class
             Greeting greet = new Greeting();
 
+            // Create instance of the Person class
+            Person person = new Person("Andy", 24);
+
             // Use the intance to call the Hello method
             Console.WriteLine(greet.Hello("Andy"));
 
             // Use the instance to call the Hola method
             Console.WriteLine(greet.Hola("Andres"));
+
+            Console.WriteLine(person.Introduce());
+
         }
     }
 
